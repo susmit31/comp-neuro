@@ -1,0 +1,67 @@
+---
+title: "Computational Neuroscience"
+author: "Susmit Islam, MBBS"
+documentclass: memoir
+output:
+ pdf_document:
+  extra_dependencies: ["graphicx", "subcaption", "hyperref", "pdfpages", "palatino", "tikz", "pgfplots"]
+fontsize: 12pt
+geometry: margin=2cm
+colorlinks: true
+linkcolor: blue
+urlcolor: blue
+toccolor: gray
+---
+
+\renewcommand{\labelitemi}{$\blacktriangleright$}
+\renewcommand{\labelitemii}{$\boldsymbol\circ$}
+\renewcommand{\labelitemiii}{$\bullet$}
+\renewcommand{\labelitemiv}{\tiny$\blacksquare$}
+
+\openany
+\raggedbottom
+\twocoltocetc
+\tableofcontents
+
+\pagebreak
+
+
+# Preface {-}
+What follows are my notes on computational neuroscience, acquired mostly through self-study. The major sources that have been consulted are as follows.
+
+\begin{itemize}
+	\tightlist
+	\item \href{https://www.coursera.org/learn/computational-neuroscience}{Computational Neuroscience}, an online course on Coursera by the University of Washington.
+	\item \href{https://neuronaldynamics.epfl.ch/online/}{Neuronal Dynamics}, a freely available online textbook.
+	\item Lecture notes on Computational Neuroscience by Todd Troyer.
+\end{itemize}
+
+As these are the fruits of quite unguided explorations through the vast terrains of computational neuroscience, it's astronomically unlikely that these are void of errors. I take full responsibility for all mistakes within. But in exchange, I urge you, the reader, to do me a couple of favours. First, read everything (these notes _and_ everything else that you will ever read) with a hint of healthy scepticism - all the authors are, just like you and I, humans. And second, let me know of the errors you find here - be they "hard errors" (i.e. something scientifically incorrect), or "soft errors" (i.e., something that isn't, strictly speaking, incorrect, but could be presented better).
+ Computational biology is a joy of a ride - I hope you have as much fun
+ reading these notes as I have had in preparing these.
+
+
+ \hfill Susmit Islam
+ 
+ \hfill `r Sys.Date()`
+
+
+# Intro
+## Types of Models
+- Descriptive $\rightarrow$ _what?_
+- Mechanistic $\rightarrow$ _how?_
+- Interpretive $\rightarrow$ _why?_
+
+## Receptive fields
+- Patterns of activation of a receptor
+- Retinal ganglion cells have a centre-surround pattern of activation
+- Cells in the V1 or V2 cortex have more complex patterns of activation e.g.
+ oriented bars or more complex features
+- Each layer builds on top of the previous ones to represent more and more
+ complex patterns
+- Our task:
+	- _Describe_ the receptive fields at each layer (_what?_)
+	- Explain the _mechanism_ by which the higher-order receptive fields
+	  arise out of the lower-order fields (_how_)
+	- _Interpret_ the computational advantages and disadvantages of the
+	 obtained models over other possible models (_why_)

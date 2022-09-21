@@ -1,0 +1,133 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
+\documentclass[
+  12pt,
+]{memoir}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage[table]{xcolor}
+
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Computational Neuroscience},
+  pdfauthor={Susmit Islam, MBBS},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{palatino}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning,arrows.meta}
+
+\title{Computational Neuroscience}
+\author{Susmit Islam, MBBS}
+\date{}
+
+\begin{document}
+\frontmatter
+\includepdf[pages=1,fitpaper]{../pdfs/cover-compneu.pdf}
+\maketitle
+
+\mainmatter
+\renewcommand{\labelitemi}{$\blacktriangleright$}
+\renewcommand{\labelitemii}{$\boldsymbol\circ$}
+\renewcommand{\labelitemiii}{$\bullet$}
+\renewcommand{\labelitemiv}{\tiny$\blacksquare$}
+
+\openany
+\raggedbottom
+\twocoltocetc
+\tableofcontents
+
+\pagebreak
+
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+What follows are my notes on computational neuroscience, acquired mostly
+through self-study. The major sources that have been consulted are as
+follows.
+
+\begin{itemize}
+    \tightlist
+    \item \href{https://www.coursera.org/learn/computational-neuroscience}{Computational Neuroscience}, an online course on Coursera by the University of Washington.
+    \item \href{https://neuronaldynamics.epfl.ch/online/}{Neuronal Dynamics}, a freely available online textbook.
+    \item Lecture notes on Computational Neuroscience by Todd Troyer.
+\end{itemize}
+
+As these are the fruits of quite unguided explorations through the vast
+terrains of computational neuroscience, it's astronomically unlikely
+that these are void of errors. I take full responsibility for all
+mistakes within. But in exchange, I urge you, the reader, to do me a
+couple of favours. First, read everything (these notes \emph{and}
+everything else that you will ever read) with a hint of healthy
+scepticism - all the authors are, just like you and I, humans. And
+second, let me know of the errors you find here - be they ``hard
+errors'' (i.e.~something scientifically incorrect), or ``soft errors''
+(i.e., something that isn't, strictly speaking, incorrect, but could be
+presented better). Computational biology is a joy of a ride - I hope you
+have as much fun reading these notes as I have had in preparing these.
+
+\hfill Susmit Islam
+
+\hfill 2022-09-21
+
+\backmatter
+\end{document}
