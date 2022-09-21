@@ -9,10 +9,8 @@ echo "require(rmarkdown); render('../src/$1.Rmd', output_file='$1.tex')" | R --v
  sed "s#\\\usepackage{xcolor}#\\\usepackage\[table\]{xcolor}\n#" "$1.tex" > tmp &&
  mv tmp "$1.tex" && 
  pdflatex "$1.tex" &&
+ pdflatex "$1.tex" > /dev/null &&
  #find . -maxdepth 1 -name "*.pdf" -exec mv {} ../pdfs \;
  ls | grep -P "$1\.(?!(Rmd|tex|pdf))" | xargs -I _ rm _ &&
  ls | grep *.pdf | xargs -I _ mv _ ../pdfs/_ &&
  echo "Done!"
-
-
-

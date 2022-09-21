@@ -60,8 +60,10 @@ As these are the fruits of quite unguided explorations through the vast terrains
 - Each layer builds on top of the previous ones to represent more and more
  complex patterns
 - Our task:
-	- _Describe_ the receptive fields at each layer (_what?_)
+	- _Describe_ the receptive fields at each layer (_what_ biology is doing)
 	- Explain the _mechanism_ by which the higher-order receptive fields
-	  arise out of the lower-order fields (_how_)
+	  arise out of the lower-order fields (_how_ low-level "instructions"
+	  give rise to "complex" biology)
 	- _Interpret_ the computational advantages and disadvantages of the
-	 obtained models over other possible models (_why_)
+	 obtained models over other possible models (_why_ biology chose this
+	 model over others)
